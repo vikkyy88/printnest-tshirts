@@ -40,8 +40,8 @@ export default function Home() {
             transition={{ duration: 0.8, delay: 0.2 }}
             className="text-white text-6xl md:text-9xl font-black uppercase tracking-tighter leading-none mb-8"
           >
-            WEAR WHAT YOU <br /> 
-            <span className="text-neon-green italic">FEEL</span>
+            WEAR WHAT <br /> 
+            YOU <span className="text-neon-green italic">FEEL</span>
           </motion.h1>
           <motion.div 
             initial={{ opacity: 0, y: 20 }}
