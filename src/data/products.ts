@@ -4,7 +4,7 @@ export const products: Product[] = [
   {
     id: 'men-1',
     name: 'Neon Abstract Oversized Tee',
-    price: 45,
+    price: 1999,
     description: 'Premium heavyweight cotton oversized t-shirt with a bold neon green abstract geometric graphic. Designed for the modern street aesthetic.',
     category: 'Men',
     images: ['/images/men_streetwear_tshirt_1_1775357166967.png'],
@@ -18,7 +18,7 @@ export const products: Product[] = [
   {
     id: 'women-1',
     name: 'Gothic Floral White Tee',
-    price: 42,
+    price: 1799,
     description: 'A clean white oversized tee featuring a high-definition black gothic floral print on the back. Soft-touch premium fabric for everyday comfort.',
     category: 'Women',
     images: ['/images/women_streetwear_tshirt_1_1775357191313.png'],
@@ -31,7 +31,7 @@ export const products: Product[] = [
   {
     id: 'couple-1',
     name: 'His & Hers Neon Bundle',
-    price: 75,
+    price: 2999,
     description: 'Matching black premium t-shirts for couples. One with "His" and one with "Hers" in a minimalist neon green font. Perfect for anniversaries or casual dates.',
     category: 'Couples',
     images: ['/images/couples_tshirt_bundle_1_1775357215071.png'],
@@ -41,12 +41,12 @@ export const products: Product[] = [
     reviewsCount: 45,
     isTrending: true,
     isSale: true,
-    discountPrice: 65,
+    discountPrice: 2499,
   },
   {
     id: 'men-2',
     name: 'Minimalist Nest Logo Tee',
-    price: 38,
+    price: 1499,
     description: 'Simple and clean white t-shirt with a subtle "Nest" logo on the pocket area. A versatile piece for any street-inspired wardrobe.',
     category: 'Men',
     images: ['/images/men_minimalist_tshirt_1_1775357238377.png'],

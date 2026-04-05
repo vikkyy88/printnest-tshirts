@@ -42,7 +42,7 @@ export default function WishlistPage() {
         {/* Suggestion */}
         <section className="mt-24 bg-neon-green p-12 text-center">
            <h2 className="text-black text-3xl font-black uppercase tracking-tighter mb-4">READY TO CART THEM?</h2>
-           <p className="text-black/70 font-bold uppercase tracking-widest text-sm mb-8">Grab your favorites now and get free shipping on orders over $75.</p>
+           <p className="text-black/70 font-bold uppercase tracking-widest text-sm mb-8">Grab your favorites now and get free shipping on orders over ₹2000.</p>
            <Link href="/cart" className="bg-black text-white px-12 py-4 font-black uppercase tracking-widest hover:bg-white hover:text-black transition-colors inline-block">
               Go to Cart
            </Link>

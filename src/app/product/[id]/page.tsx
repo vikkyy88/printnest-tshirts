@@ -80,11 +80,11 @@ export default function ProductDetail() {
             <div className="flex items-center gap-4">
               {product.isSale && product.discountPrice ? (
                 <>
-                  <span className="text-4xl font-black text-neon-green">${product.discountPrice}</span>
-                  <span className="text-2xl text-zinc-400 line-through font-bold">${product.price}</span>
+                  <span className="text-4xl font-black text-neon-green">₹{product.discountPrice}</span>
+                  <span className="text-2xl text-zinc-400 line-through font-bold">₹{product.price}</span>
                 </>
               ) : (
-                <span className="text-4xl font-black">${product.price}</span>
+                <span className="text-4xl font-black">₹{product.price}</span>
               )}
             </div>
           </div>
@@ -172,7 +172,7 @@ export default function ProductDetail() {
               <Truck size={24} className="text-neon-green" />
               <div>
                 <p className="text-[10px] font-black uppercase tracking-widest">Free Shipping</p>
-                <p className="text-[8px] text-zinc-500 font-bold uppercase">Orders over $75</p>
+                <p className="text-[8px] text-zinc-500 font-bold uppercase">Orders over ₹2000</p>
               </div>
             </div>
             <div className="flex items-center gap-3">
