@@ -40,8 +40,8 @@ export default function Home() {
             transition={{ duration: 0.8, delay: 0.2 }}
             className="text-white text-6xl md:text-9xl font-black uppercase tracking-tighter leading-none mb-8"
           >
-            STAY <span className="text-outline text-transparent border-t-zinc-800">BOLD</span> <br /> 
-            LIVE <span className="text-neon-green italic">LOUD</span>
+            WEAR WHAT <br /> 
+            YOU <span className="text-neon-green italic">FEEL</span>
           </motion.h1>
           <motion.div 
             initial={{ opacity: 0, y: 20 }}
@@ -142,7 +142,7 @@ export default function Home() {
       <section className="py-24 px-6 container mx-auto">
         <div className="grid grid-cols-2 md:grid-cols-4 gap-12">
           {[
-            { icon: <Truck size={32} />, title: "Free Shipping", desc: "On orders over $75" },
+            { icon: <Truck size={32} />, title: "Free Shipping", desc: "On orders over ₹2000" },
             { icon: <ShieldCheck size={32} />, title: "Secure Checkout", desc: "Encrypted payments" },
             { icon: <Sparkles size={32} />, title: "Premium Fit", desc: "Tailored for young adults" },
             { icon: <Zap size={32} />, title: "Fast Delivery", desc: "Door-to-door in 3 days" }

@@ -86,11 +86,11 @@ export const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
           <div className="text-right">
             {product.isSale && product.discountPrice ? (
               <div className="flex flex-col">
-                <span className="text-[10px] text-zinc-400 line-through font-bold">${product.price}</span>
-                <span className="text-sm font-black text-neon-green">${product.discountPrice}</span>
+                <span className="text-[10px] text-zinc-400 line-through font-bold">₹{product.price}</span>
+                <span className="text-sm font-black text-neon-green">₹{product.discountPrice}</span>
               </div>
             ) : (
-              <span className="text-sm font-black">${product.price}</span>
+              <span className="text-sm font-black">₹{product.price}</span>
             )}
           </div>
         </div>

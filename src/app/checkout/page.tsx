@@ -17,7 +17,7 @@ export default function CheckoutPage() {
     address: '',
     city: '',
     zip: '',
-    country: 'United Kingdom',
+    country: 'India',
     cardNumber: '',
     expiry: '',
     cvv: ''
@@ -119,9 +119,9 @@ export default function CheckoutPage() {
                     <input name="city" required placeholder="CITY" className="bg-zinc-100 dark:bg-zinc-900 p-4 font-bold text-sm uppercase outline-none focus:ring-2 focus:ring-neon-green" value={formData.city} onChange={handleInputChange} />
                     <input name="zip" required placeholder="ZIP CODE" className="bg-zinc-100 dark:bg-zinc-900 p-4 font-bold text-sm uppercase outline-none focus:ring-2 focus:ring-neon-green" value={formData.zip} onChange={handleInputChange} />
                     <select name="country" className="bg-zinc-100 dark:bg-zinc-900 p-4 font-bold text-sm uppercase outline-none focus:ring-2 focus:ring-neon-green" value={formData.country} onChange={handleInputChange}>
-                       <option>United Kingdom</option>
+                       <option>India</option>
                        <option>United States</option>
-                       <option>Germany</option>
+                       <option>United Kingdom</option>
                     </select>
                 </div>
             </section>
@@ -186,7 +186,7 @@ export default function CheckoutPage() {
                          <div className="flex-1">
                             <h4 className="text-[10px] font-black uppercase tracking-tight leading-tight">{item.name}</h4>
                             <p className="text-[8px] font-bold text-zinc-500 uppercase mt-1">{item.selectedSize} / X{item.quantity}</p>
-                            <p className="text-xs font-black mt-1">${((item.discountPrice || item.price) * item.quantity).toFixed(2)}</p>
+                            <p className="text-xs font-black mt-1">₹{((item.discountPrice || item.price) * item.quantity).toFixed(2)}</p>
                          </div>
                       </div>
                    ))}
@@ -195,7 +195,7 @@ export default function CheckoutPage() {
                 <div className="space-y-4 pt-6 border-t border-zinc-200 dark:border-zinc-800">
                     <div className="flex justify-between items-center text-xs font-bold uppercase tracking-widest text-zinc-500">
                        <span>Subtotal</span>
-                       <span className="text-black font-black dark:text-white">${cartTotal.toFixed(2)}</span>
+                       <span className="text-black font-black dark:text-white">₹{cartTotal.toFixed(2)}</span>
                     </div>
                     <div className="flex justify-between items-center text-xs font-bold uppercase tracking-widest text-zinc-500">
                        <span>Shipping</span>
@@ -203,7 +203,7 @@ export default function CheckoutPage() {
                     </div>
                     <div className="flex justify-between items-center text-xl font-black uppercase tracking-tighter pt-4 border-t border-zinc-100 dark:border-zinc-800">
                        <span>Total</span>
-                       <span>${cartTotal.toFixed(2)}</span>
+                       <span>₹{cartTotal.toFixed(2)}</span>
                     </div>
                 </div>
 

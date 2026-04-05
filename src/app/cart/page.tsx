@@ -52,7 +52,7 @@ export default function CartPage() {
                       <h3 className="text-xl font-black uppercase tracking-tighter group-hover:text-neon-green transition-colors leading-tight">{item.name}</h3>
                       <p className="text-xs text-zinc-400 font-bold uppercase mt-1">Size: {item.selectedSize} / {item.selectedColor}</p>
                     </div>
-                    <p className="text-xl font-black">${((item.discountPrice || item.price) * item.quantity).toFixed(2)}</p>
+                    <p className="text-xl font-black">₹{((item.discountPrice || item.price) * item.quantity).toFixed(2)}</p>
                   </div>
 
                   <div className="flex items-center justify-between">
@@ -88,7 +88,7 @@ export default function CartPage() {
              <div className="space-y-4">
                 <div className="flex justify-between items-center text-xs font-bold uppercase tracking-widest text-zinc-500">
                    <span>Subtotal</span>
-                   <span className="text-black dark:text-white font-black">${cartTotal.toFixed(2)}</span>
+                   <span className="text-black dark:text-white font-black">₹{cartTotal.toFixed(2)}</span>
                 </div>
                 <div className="flex justify-between items-center text-xs font-bold uppercase tracking-widest text-zinc-500">
                    <span>Delivery</span>
@@ -96,13 +96,13 @@ export default function CartPage() {
                 </div>
                 <div className="flex justify-between items-center text-xs font-bold uppercase tracking-widest text-zinc-500">
                    <span>Tax (Estimate)</span>
-                   <span className="text-black dark:text-white font-black">$0.00</span>
+                   <span className="text-black dark:text-white font-black">₹0.00</span>
                 </div>
              </div>
 
              <div className="pt-6 border-t border-zinc-200 dark:border-zinc-800 flex justify-between items-center text-2xl font-black uppercase tracking-tighter mb-4">
                 <span>Total</span>
-                <span>${cartTotal.toFixed(2)}</span>
+                <span>₹{cartTotal.toFixed(2)}</span>
              </div>
 
              <div className="space-y-4">
