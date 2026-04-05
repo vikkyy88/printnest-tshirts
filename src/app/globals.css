@@ -1,0 +1,58 @@
+@import "tailwindcss";
+
+@theme {
+  --color-neon-green: #39FF14;
+  --color-neon-orange: #FF5E00;
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: "Inter", "Outfit", "ui-sans-serif", "system-ui", "sans-serif";
+}
+
+@layer base {
+  :root {
+    --background: #ffffff;
+    --foreground: #000000;
+  }
+
+  .dark {
+    --background: #000000;
+    --foreground: #ffffff;
+  }
+
+  body {
+    background-color: var(--background);
+    color: var(--foreground);
+    @apply antialiased;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply bg-neon-green text-black font-bold py-3 px-8 rounded-none uppercase tracking-widest hover:bg-white hover:text-black transition-all duration-300;
+  }
+
+  .btn-outline {
+    @apply border-2 border-zinc-900 bg-transparent text-zinc-900 font-bold py-3 px-8 rounded-none uppercase tracking-widest hover:bg-zinc-900 hover:text-white transition-all duration-300 dark:border-white dark:text-white dark:hover:bg-white dark:hover:text-black;
+  }
+
+  .glass-card {
+    @apply bg-white/10 backdrop-blur-md border border-white/20;
+  }
+}
+
+/* Custom Hide Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #333;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-neon-green);
+}
