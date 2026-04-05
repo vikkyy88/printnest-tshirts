@@ -40,8 +40,8 @@ export default function Home() {
             transition={{ duration: 0.8, delay: 0.2 }}
             className="text-white text-6xl md:text-9xl font-black uppercase tracking-tighter leading-none mb-8"
           >
-            STAY <span className="text-outline text-transparent border-t-zinc-800">BOLD</span> <br /> 
-            LIVE <span className="text-neon-green italic">LOUD</span>
+            WEAR WHAT YOU <br /> 
+            <span className="text-neon-green italic">FEEL</span>
           </motion.h1>
           <motion.div 
             initial={{ opacity: 0, y: 20 }}
